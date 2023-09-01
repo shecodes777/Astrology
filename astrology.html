@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-image: linear-gradient(135deg, #c7c8fe 0%, #fd8b9a 100%);
+      }
+      h1,
+      h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h1 {
+        color: rgb(169, 113, 195);
+        font-size: 48px;
+        font-weight: 700;
+        font-style: initial;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        text-align: center;
+        line-height: 50px;
+        margin: 20px;
+      }
+
+      h2 {
+        color: rgb(169, 113, 195);
+        text-align: center;
+        line-height: 40px;
+        margin: auto;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        opacity: 0.9;
+        max-width: 900%;
+        padding: 30px;
+        border: #fd8b9a;
+        border-radius: 50px;
+      }
+      .horoscope {
+        display: block;
+        text-decoration: none;
+        font-style: italic;
+        font-size: 14px;
+        color: rgb(230, 227, 221);
+        margin-top: 15px;
+      }
+      .horoscope:hover {
+        text-decoration: underline;
+        color: brown;
+      }
+
+      p {
+        font-size: 14px;
+        color: rgb(234, 221, 237);
+        text-align: center;
+        text-shadow: 1px 1px 2px rgb(0, 6, 11);
+        line-height: 1.5;
+        font-weight: 500;
+        padding: 10px 10px;
+        border: #885d9b;
+        border-width: 30px;
+        margin: 10px 10px;
+      }
+      button {
+        display: block;
+        margin: auto;
+        background-color: #deccca;
+        color: rgb(212, 159, 23);
+        font-size: 20px;
+        font-style: italic;
+        border: gold;
+        border-radius: 11px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      .user {
+        color: #ebe7ed;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Astrology ✨🌔</h1>
+      <h2>Understanding the world through a picture of the sky</h2>
+      <img
+        src="https://cdn.bfldr.com/SH6M70M3/as/n788qwntbkb86rv8hhfpps7w/Big_3_Astrology?width=1200&height=630&fit=crop&auto=webp"
+        alt="Astrology"
+        width="450px"
+      />
+
+      <p>
+        Astrology is a topic that has been studied for decades. It analzyes
+        where the planets and stars were positioned on the day of your birth.
+        Imagine taking a picture of the sky the moment you were born. Then,
+        taking this snapshot home and analyzing the various positions of the
+        stars and planets within it. The sky can be divided into 12 sections,
+        each consisting of a sign, and depending on where the sun was located
+        the day you were born, you would be able to identify your astrological
+        sign. The twelve signs are Aries, Taurus, Gemini, Cancer, Leo, Virgo,
+        Libra, Scorpio, Sagittarius, Capricorn, Aquarius and Pisces. You can
+        analzye your snapshot, also known as your birthchart, to see which sign
+        each planet was travelling through the moment you were born.
+        <br />
+        <a
+          href="https://www.horoscope.com/zodiac-signs"
+          target="“_blank”"
+          class="horoscope"
+        >
+          Learn more about each astrological sign here☀️
+        </a>
+      </p>
+
+      <button>Join our mailing list today! 🪐</button>
+
+      <p class="user">All information provided by Mary Tadesse</p>
+    </div>
+    <script>
+      function mailingList() {
+        let name = prompt("What is your name?");
+        let sign = prompt("What is your astrological sign?");
+        let email = prompt("What is your email?");
+        alert(
+          "Hello " +
+            name +
+            "👋🏽 Welcome to our Astrology community 👨‍👩‍👧‍👧 Follow our page to learn more about the " +
+            sign +
+            " sign and check your email for more timely astrological updates."
+        );
+      }
+
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", mailingList);
+    </script>
+  </body>
+</html>
